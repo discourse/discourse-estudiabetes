@@ -1,5 +1,5 @@
 class EtdPermalinksController < ApplicationController
-  skip_before_filter :check_xhr, :preload_json
+  skip_before_action :check_xhr, :preload_json
 
   def show
     # EtdPermalinkConstraint controls when this happens
